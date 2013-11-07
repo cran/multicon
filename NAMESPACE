@@ -1,0 +1,7 @@
+exportPattern("^[[:alpha:]]+")
+import(sciplot)
+import(mvtnorm)
+import(abind)
+import(psych)
+import(foreach)
+
