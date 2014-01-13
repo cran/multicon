@@ -34,7 +34,7 @@ function(DV, grp=NULL, barFUN=mean, errFUN=c("ci", "se", "sd"), sides=2, conf=.9
   }
     # For a DV with one grouping variable (multiple bars - one-way ANOVA)
   if(!is.null(grp) & !is.list(grp)) {
-    dat <- cbind(DV, grp)
+    dat <- data.frame(DV, grp)
     dat <- dat[complete.cases(dat),]
     res <- tapply(dat[,1], dat[,2], barFUN)
     grph <- barplot(res, ...)

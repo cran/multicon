@@ -39,7 +39,7 @@ function(DV, grp=NULL, plotFUN=mean, errFUN=c("ci", "se", "sd"), sides=2, conf=.
   }
     # For a DV with one grouping variable (multiple lines - one-way ANOVA)
   if(!is.null(grp) & !is.list(grp)) {
-    dat <- cbind(DV, grp)
+    dat <- data.frame(DV, grp)
     dat <- dat[complete.cases(dat),]
     res <- tapply(dat[,1], dat[,2], plotFUN)
     if(is.null(xpoints)) {
@@ -68,7 +68,7 @@ function(DV, grp=NULL, plotFUN=mean, errFUN=c("ci", "se", "sd"), sides=2, conf=.
   if(is.list(grp)) {
     if(length(unique(unlist(lapply(grp, length)))) != 1) {stop("Grouping variables must be the same length.")}
     if(length(DV) != lapply(grp, length)[[1]]) {stop("DV must be the same length as the grouping variables.")}
-    dat <- cbind(DV, matrix(unlist(grp), nrow=length(DV), byrow=F))
+    dat <- data.frame(DV, matrix(unlist(grp), nrow=length(DV), byrow=F))
     if(sum(is.na(dat)) > 0) {stop("Please remove missing values in DV and IV first.")}
     res <- as.vector(tapply(DV, grp, plotFUN))
     if(is.null(xpoints)) {

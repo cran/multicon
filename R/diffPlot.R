@@ -17,7 +17,7 @@ function(DV, grp, plotFUN=mean, errFUN=c("ci", "se", "sd"), conf=.95, grp.names=
 
   if(!is.null(errFUN)) {errFUN <- match.arg(errFUN)}
 
-  dat <- cbind(DV, grp)
+  dat <- data.frame(DV, grp)
   dat <- na.omit(dat)
   res <- tapply(dat[,1], dat[,2], plotFUN)
   res <- c(res, res[2])

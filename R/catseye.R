@@ -48,7 +48,7 @@ function(DV, grp = NULL, plotFUN = mean, errFUN = c("ci", "se", "sd"),
         axis(1, at = 1, labels = grp.names, tick = tick)
     }
     if (!is.null(grp) & !is.list(grp)) {
-        dat <- cbind(DV, grp)
+        dat <- data.frame(DV, grp)
         dat <- dat[complete.cases(dat), ]
         res <- tapply(dat[, 1], dat[, 2], plotFUN)
         if (is.null(xpoints)) {
@@ -97,7 +97,7 @@ function(DV, grp = NULL, plotFUN = mean, errFUN = c("ci", "se", "sd"),
         if (length(DV) != lapply(grp, length)[[1]]) {
             stop("DV must be the same length as the grouping variables.")
         }
-        dat <- cbind(DV, matrix(unlist(grp), nrow = length(DV), byrow = FALSE))
+        dat <- data.frame(DV, matrix(unlist(grp), nrow = length(DV), byrow = FALSE))
         if (sum(is.na(dat)) > 0 ) {
           stop("Please remove missing values in DV and IV first.")
         }

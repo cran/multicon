@@ -41,7 +41,7 @@ Ryne A. Sherman
 }
 
 \seealso{
-\code{\link{q.cor}}, ~~~
+\code{\link{q.cor}}
 }
 \examples{
 data(rbqv3.items)
