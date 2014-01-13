@@ -5,6 +5,7 @@
 Print q.cor 
 }
 \description{
+This function is now deprecated. Please use print instead. 
 Prints the results of a q.cor object in a more interpretable fashion. Also includes a convenient export option.
 }
 \usage{

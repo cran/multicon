@@ -41,7 +41,7 @@ The seed passed to the rand.test function.
 A convenience function for quickly examining the pattern of correlations between a variable of interest "x" and a set of other variables "set".
 }
 \value{
-A list containing...
+A list of class q.cor containing...
 \item{N}{
 	The Ns (using complete cases) for the total sample as well as female and male subsamples.
 	}
@@ -61,10 +61,10 @@ A list containing...
 Ryne A. Sherman
 }
 \note{
-Use \code{\link{q.cor.print}} not \code{\link{print}} to view the output of q.cor.
+Use \code{\link{print}} to quickly summarize the output of a q.cor object.
 }
 \seealso{
-\code{\link{q.cor.print}}
+\code{\link{print.q.cor}}
 \code{\link{rand.test}}
 }
 \examples{
@@ -73,12 +73,12 @@ data(v2rbq)
 names(v2rbq)
 q.obj <- q.cor(RSPdata$sEXT, v2rbq, sex = RSPdata$ssex, fem = 1, male = 2, sims = 1000)
 q.obj	
-	#It is often useful to summarize this object with q.cor.print()
+	#It is often useful to summarize this object with print.
 	#It might be necessary to adjust size of the width of your console to make this content fit.
 data(rbqv3.items)
 rbqv3.items #The item content for the rbq
-q.cor.print(q.obj, rbqv3.items, initial = "RBQ", short = TRUE, EXPORT = FALSE) 
-	# to export a .csv file change export to 'T'
+print(q.obj, rbqv3.items, initial = "RBQ", short = TRUE, EXPORT = FALSE) 
+	# to export a .csv file change export to a location.
 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

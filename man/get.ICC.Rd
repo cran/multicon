@@ -5,7 +5,7 @@
 Intra-class Correlations
 }
 \description{
-Calculates the 6 intra-class correlations for the columns in the matrix or data.frame x, where the columns are typically raters or items, following Shrout and Fleiss (1979) x.
+Calculates the 6 intra-class correlations for the columns in the matrix or data.frame x, where the columns are typically raters or items, following Shrout and Fleiss (1979).
 }
 \usage{
 get.ICC(x)

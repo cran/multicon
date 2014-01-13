@@ -48,5 +48,6 @@ function(x, set, sex, fem=1, male=2, tails=2, sims=1000, seed=2) {
   if (sims == FALSE) {
     result <- list("N"=Ns, "corrs"=cortable, "sorted"=sort.out, "vector.cor"=vec.corr)
   }
+  class(result) <- c("q.cor")
   return(result)
 }

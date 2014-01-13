@@ -1,5 +1,7 @@
 rand.test <-
 function(set1, set2, sims=1000, crit=.95, graph=TRUE, seed=2) {
+   set1 <- data.frame(set1)
+   set2 <- data.frame(set2)
 
    # This part gets the data ready to be used in the randomization test
    samp.distr=c()     #Create a sampling distribution vector for the average absolute r

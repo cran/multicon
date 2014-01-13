@@ -1,4 +1,4 @@
-b66e17ab611a745b1b723ec87b07f901 *DESCRIPTION
+764dc6a1feb634065c83d6e2db08fd6e *DESCRIPTION
 137a044fe3931f89d455c3e06a8c11fe *NAMESPACE
 35395478202c33f370fd5abe13b9d76d *R/MTMM.R
 8ae43bbdefdc60fae982d66898a64655 *R/Profile.ICC.R
@@ -31,9 +31,10 @@ de9bda47bc2e78d043f2976fdcd250ca *R/lin.coef.R
 131be2d78174aa0ce331949e28840a39 *R/n4rci.R
 94628b8d7599fae300b867495e8f0e0a *R/partwhole.R
 b3ac1e8df6521cdf01a0c87961a7e0cb *R/popsd.R
-0ed80f4f3b373d0991d174d640517d87 *R/q.cor.R
-26fb91839925028ebd406ae49976f1b1 *R/q.cor.print.R
-365a1f48ba67fc50dbeaf930d3063b22 *R/rand.test.R
+e3d0a2e30f10b8ca1e5e282e8fed1848 *R/print.q.cor.r
+06dacaabeceb0c3a3e9f9b0f53c340c2 *R/q.cor.R
+d009696437a4dd43fcdc2a0344f8530f *R/q.cor.print.R
+8db6b27787f21889cb9ae731b2be0d1e *R/rand.test.R
 ae7703d319e1da6244098be84ef5c6cb *R/reQ.R
 593e7406f96ef4b3f385946aeed81f76 *R/scale2.R
 6b3c00a9a8e670419d03e57d5fa73c49 *R/sig.r.R
@@ -87,7 +88,7 @@ b88a806105056c39275f55df0a5bedb9 *man/cor.comb.rep.Rd
 c97f36d316d77d9c681eb5bdcb2a410d *man/diffPlot.Rd
 8b6e210aa93e5d8e44e8d8e079b10118 *man/e.bars.Rd
 3805bcd4e6ef0f1c18380f2706ebd906 *man/egraph.Rd
-a72c7d4f0f812f69ac6ce765c95961e8 *man/get.ICC.Rd
+e3bf43cc66cc7b7c94039724bed2c29a *man/get.ICC.Rd
 5c3fded1558ace9ed799b2e06a5600a3 *man/horn.Rd
 6878d1b8e0263f0c49856686629b5026 *man/inner.outer.Rd
 3bfdadb82547553bee843fe781b901fd *man/ipsatize.Rd
@@ -100,8 +101,9 @@ a84ca0277efc0520a607b09401559718 *man/n4rci.Rd
 5d49ea719acc5461576e04558584cf77 *man/opt.temp.Rd
 6fb00f213a203ad79451ca52d392e540 *man/partwhole.Rd
 bf142bad1a25d4466a8748a65c5a7589 *man/popsd.Rd
-0e189ca87ed967c867b2566f72d58b85 *man/q.cor.Rd
-ec71cd76e4cacf7d2083d47dcda4c76d *man/q.cor.print.Rd
+797b97e5ab149b1da87393ee3b306921 *man/print.q.cor.rd
+d0b28be4d8442825b6937f92bdffdacf *man/q.cor.Rd
+c842f5bdcf7d7b7ad686a88bf032705d *man/q.cor.print.Rd
 fa7d1dc319ee0869f46cdc25dfc6de02 *man/rand.test.Rd
 780a6860131f451222768eba7abe7b9d *man/rate.caq.Rd
 b21c64379c627864d828e159ddb69136 *man/rbqv3.items.Rd
