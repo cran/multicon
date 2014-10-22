@@ -10,7 +10,7 @@ A function for plotting summary statistics with error bars and error distributio
 \usage{
 catseye(DV, grp = NULL, plotFUN = mean, errFUN = c("ci", "se", "sd"),
 	 conf = 0.95, xpoints = NULL, grp.names = NULL, 
-	 tick = FALSE, ylim = NULL, col = "gray", ...)
+	 tick = FALSE, ylim = NULL, col = "gray", len = 0, ...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -42,6 +42,9 @@ A numeric vector of length 2 indicating the lower and upper limits of the y-axis
 }
   \item{col}{
 A specification of the plotting color for the error distributions. See \code{\link{par}}.
+}
+  \item{len}{
+A numeric indicating the desired length of the error bar "caps" in inches.
 }
   \item{\dots}{
 Other arguments passed to the plot() function including graphing parameters.

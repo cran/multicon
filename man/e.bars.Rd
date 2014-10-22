@@ -8,7 +8,7 @@ Error Bars
 A function for plotting error bars onto barplots.
 }
 \usage{
-e.bars(graph, m, ebl, sides = 2, length = 0.08)
+e.bars(graph, m, ebl, sides = 2, length = 0)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

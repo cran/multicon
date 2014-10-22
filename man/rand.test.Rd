@@ -44,7 +44,7 @@ A list containing...
 	 }
 }
 \references{
-Sherman, R. A. & Funder, D. C. (2009). Evaluating correlations in studies of personality and behavior: Beyond the number of significant findings to be expected by chance. Journal of Research in Personality, 43, 1053-1063.
+Sherman, R. A., & Funder, D. C. (2009). Evaluating correlations in studies of personality and behavior: Beyond the number of significant findings to be expected by chance. Journal of Research in Personality, 43, 1053-1063.
 }
 \author{
 Ryne A. Sherman

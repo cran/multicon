@@ -1,7 +1,7 @@
 catseye <-
 function(DV, grp = NULL, plotFUN = mean, errFUN = c("ci", "se", "sd"),
                 conf = .95, xpoints = NULL, grp.names = NULL, tick = FALSE,
-                ylim = NULL, col = "gray", ...)
+                ylim = NULL, col = "gray", len = 0, ...)
 {
     se <- function(x) {
         x <- na.omit(x)
@@ -38,7 +38,7 @@ function(DV, grp = NULL, plotFUN = mean, errFUN = c("ci", "se", "sd"),
             poly2 <- which(Qscale2 == res + e)
             polygon(x = c(c(1 - dnorm(Q))[poly1:poly2], c(1 + dnorm(Q))[poly2:poly1]), y = c(Qscale2[poly1:poly2], Qscale2[poly2:poly1]), border = NA, col = col)
             points(x = 1, y = res, pch = 19)
-            arrows(1, res + e, 1, res - e, angle = 90, code = 3, length = 0.08)
+            arrows(1, res + e, 1, res - e, angle = 90, code = 3, length = len)
             lines(x = 1 - dnorm(Q), y = Qscale)
             lines(x = 1 + dnorm(Q), y = Qscale)
         }
@@ -83,7 +83,7 @@ function(DV, grp = NULL, plotFUN = mean, errFUN = c("ci", "se", "sd"),
               lines(x = places[i] + dnorm(Q[, i]), y = Qscale[, i])
             }
             points(x = places, y = res, pch = 19)
-            arrows(places, res + e, places, res - e, angle = 90, code = 3, length = .08)
+            arrows(places, res + e, places, res - e, angle = 90, code = 3, length = len)
         }
         if (is.null(grp.names)) {
             grp.names <- 1:length(places)
@@ -134,7 +134,7 @@ function(DV, grp = NULL, plotFUN = mean, errFUN = c("ci", "se", "sd"),
               lines(x = places[i] + dnorm(Q[, i]), y = Qscale[, i])
             }
             points(x = places, y = res, pch = 19)
-            arrows(places, res + e, places, res - e, angle = 90, code = 3, length = .08)
+            arrows(places, res + e, places, res - e, angle = 90, code = 3, length = len)
         }
         if (is.null(grp.names)) {
             grp.names <- 1:length(places)

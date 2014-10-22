@@ -10,7 +10,7 @@ A function for plotting a summary statistics with error bars.
 \usage{
 egraph(DV, grp = NULL, plotFUN = mean, errFUN = c("ci", "se", "sd"), 
 	sides = 2, conf = 0.95, xpoints = NULL, 
-	grp.names = NULL, tick = FALSE, ylim = NULL, ...)
+	grp.names = NULL, tick = FALSE, ylim = NULL, len = 0, ...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -43,6 +43,9 @@ A logical indicating whether tick marks should be drawn on the x-axis for each g
 }
   \item{ylim}{
 A numeric vector of length 2 indicating the lower and upper limits of the y-axis.
+}
+  \item{len}{
+A numeric indicating the desired length of the error bar "caps" in inches. 
 }
   \item{\dots}{
 Other arguments passed to the plot() function including graphing parameters.

@@ -113,7 +113,7 @@ catseye(y, group, las=1, main="A Catseye Plot", xlab="",
 	grp.names=c("Control", "Experimental"), ylab="DV")
 catseye(y, group, las=1, main="A Catseye Plot #2", xlab="", 
 	grp.names=c("Control", "Experimental"), ylab="DV", conf=.80, col="cyan")
-
-diffPlot(y, group, grp.names=c("Control", "Experimental"), xlab="", 
+df=data.frame(group=group,y=y)
+diffPlot(y ~ group,data=df,grp.names=c("Control", "Experimental"), xlab="", 
 	ylab="DV", main="A Difference Plot", sub="Arms are 95 percent CIs")
 }

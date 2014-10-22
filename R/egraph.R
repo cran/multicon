@@ -1,5 +1,5 @@
 egraph <-
-function(DV, grp=NULL, plotFUN=mean, errFUN=c("ci", "se", "sd"), sides=2, conf=.95, xpoints=NULL, grp.names=NULL, tick=FALSE, ylim=NULL, ...) {
+function(DV, grp=NULL, plotFUN=mean, errFUN=c("ci", "se", "sd"), sides=2, conf=.95, xpoints=NULL, grp.names=NULL, tick=FALSE, ylim=NULL, len=0, ...) {
     # A function for standard error of the mean
   se <- function(x) {
     x <- na.omit(x)
@@ -28,10 +28,10 @@ function(DV, grp=NULL, plotFUN=mean, errFUN=c("ci", "se", "sd"), sides=2, conf=.
       else(lims <- ylim)
       plot(res, ylim=lims, pch=19, xaxt="n", ...)
       if(sides==1) {
-        arrows(1, res, 1, res+e, angle=90, code=2, length=.08)
+        arrows(1, res, 1, res+e, angle=90, code=2, length=len)
       }
       if(sides==2) {
-        arrows(1, res+e, 1, res-e, angle=90, code=3, length=.08)
+        arrows(1, res+e, 1, res-e, angle=90, code=3, length=len)
       }
     }
     if(is.null(grp.names)) {grp.names <- ""}
@@ -55,10 +55,10 @@ function(DV, grp=NULL, plotFUN=mean, errFUN=c("ci", "se", "sd"), sides=2, conf=.
       else(lims <- ylim)
       plot(res ~ places, pch=19, xaxt="n", xlim=c(.4,.4+places[length(places)]), ylim=lims, ...)
       if(sides==1) {
-        arrows(places, res, places, res+e, angle=90, code=2, length=.08)
+        arrows(places, res, places, res+e, angle=90, code=2, length=len)
       }
       if(sides==2) {
-        arrows(places, res+e, places, res-e, angle=90, code=3, length=.08)
+        arrows(places, res+e, places, res-e, angle=90, code=3, length=len)
       }
     }
     if(is.null(grp.names)) {grp.names <- 1:length(places)}
@@ -84,10 +84,10 @@ function(DV, grp=NULL, plotFUN=mean, errFUN=c("ci", "se", "sd"), sides=2, conf=.
       else(lims <- ylim)
       plot(res ~ places, pch=19, xaxt="n", xlim=c(.4,.4+places[length(places)]), ylim=lims, ...)
       if(sides==1) {
-        arrows(places, res, places, res+e, angle=90, code=2, length=.08)
+        arrows(places, res, places, res+e, angle=90, code=2, length=len)
       }
       if(sides==2) {
-        arrows(places, res+e, places, res-e, angle=90, code=3, length=.08)
+        arrows(places, res+e, places, res-e, angle=90, code=3, length=len)
       }
     }
     if(is.null(grp.names)) {grp.names <- 1:length(places)}
