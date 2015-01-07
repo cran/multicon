@@ -39,7 +39,7 @@ A numeric specifying the random seed to be used. If set to FALSE, no seed is use
 }
 }
 \details{
-Sherman and Wood (2013) suggest that one way to estimate the replicability of a vector of correlation coefficients between a variable of interest (x) and a set of other variables (set) is to 1) divide one's sample into two equal halves, 2) compute the the correlations between 'x' and 'set' for both samples, 3) compute the correlation between the two resultant vectors of correlations, and 4) adjust the resultant split-sample correlation up using the spearman-brown prophecy formula. This function repeats this procedure "sims" times and returns the average result along with confidence intervals. In addition, this function includes options for getting a replicability coefficient for regression slopes (betas).
+Sherman and Wood (2014) suggest that one way to estimate the replicability of a vector of correlation coefficients between a variable of interest (x) and a set of other variables (set) is to 1) divide one's sample into two equal halves, 2) compute the the correlations between 'x' and 'set' for both samples, 3) compute the correlation between the two resultant vectors of correlations, and 4) adjust the resultant split-sample correlation up using the spearman-brown prophecy formula. This function repeats this procedure "sims" times and returns the average result along with confidence intervals. In addition, this function includes options for getting a replicability coefficient for regression slopes (betas).
 }
 \value{
 
@@ -51,8 +51,7 @@ Sherman and Wood (2013) suggest that one way to estimate the replicability of a 
 
 }
 \references{
-Sherman, R. A. & Wood, D. (in press). Estimating the expected replicability of a pattern of correlations and other measures of association. Multivariate Behavioral Research.
-
+Sherman, R. A. & Wood, D. (2014). Estimating the expected replicability of a pattern of correlations and other measures of association. Multivariate Behavioral Research. 49(1), 17-40.
 }
 \author{
 Ryne A. Sherman

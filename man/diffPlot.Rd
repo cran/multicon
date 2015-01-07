@@ -14,11 +14,11 @@ diffPlot(x, ...)
 
 ## Default Method
 \method{diffPlot}{default}(x, y, plotFUN=mean, errFUN=c("ci", "se", "sd"), conf=.95, 
-  grp.names=NULL, var.equal=FALSE, paired=FALSE, ...)
+  grp.names=NULL, var.equal=FALSE, paired=FALSE, ylim=NULL, ...)
   
 ## Method for class 'formula' 
 \method{diffPlot}{formula}(formula,data, plotFUN=mean, errFUN=c("ci", "se", "sd"), conf=.95, 
-  grp.names=NULL, var.equal=FALSE, paired=FALSE, ...)
+  grp.names=NULL, var.equal=FALSE, paired=FALSE, ylim=NULL, ...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -52,8 +52,11 @@ A logical indicating whether it should be assumed that the variances of the two 
   \item{paired}{
 A logical indicating whether the data are paired.
 }
+ \item{ylim}{
+The limits of the plot on the y-axis.
+}
   \item{\dots}{
-Other arguments passed to the plot() and axis() functions including graphing parameters (e.g. 'ylim', 'col').
+Other arguments passed to the plot() and axis() functions including graphing parameters (e.g. 'col').
 }
 }
 \details{
@@ -82,7 +85,7 @@ diffPlot(g, y, ylab="DV", xlab="", main="Plot of Means with Floating Axis for Me
 grp.names=c("Control", "Experimental"), sub="Arms Indicate 95 Percent CIs")
   # Independent Groups, formula method
   df=data.frame(y=y,g=g)
-diffPlot(y ~ g, data= df,ylab="DV", xlab="", 
+diffPlot(y ~ g, data=df, ylab="DV", xlab="", 
 main="Plot of Means with Floating Axis for Mean Difference", 
 grp.names=c("Control", "Experimental"), sub="Arms Indicate 95 Percent CIs")
   # Dependent Groups

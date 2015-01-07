@@ -1,4 +1,4 @@
-0cae971ba3dcd111bc835d422117f492 *DESCRIPTION
+8d514460989fc1ceb68bfb11d710cebb *DESCRIPTION
 137a044fe3931f89d455c3e06a8c11fe *NAMESPACE
 35395478202c33f370fd5abe13b9d76d *R/MTMM.R
 8c24520bf3bbb52979b256298f3216cb *R/alpha.aci.R
@@ -13,8 +13,8 @@ b2cd9f8b2cd0e039cafb3d5c6421ed98 *R/alpha.cov.R
 c426108015592d2196c7b350b0860c7c *R/decomp.r
 535987ab4d0a9347a41a0e6adf9cdf15 *R/describe.r.R
 1fecfa42b4e8d7e65cbd97cdfcbf4855 *R/diffPlot.R
-6f7902815ec9ce0fb2a1eb7d7b5b6548 *R/diffPlot.default.r
-df6050122e35dea9cf8ed0f1d5d03a97 *R/diffPlot.formula.r
+a4643a7f4a8dc23a5607190577e02b44 *R/diffPlot.default.r
+06fb67f0876dcc15cd061719271669f0 *R/diffPlot.formula.r
 7ad8b4cd8927045494af8c6b518e7078 *R/e.bars.R
 388d70ce81b9a8563085d6368197f122 *R/egraph.R
 7e2d391943aa48395ca2315536837771 *R/get.ICC.R
@@ -23,11 +23,15 @@ df6050122e35dea9cf8ed0f1d5d03a97 *R/diffPlot.formula.r
 1b34593bc7c9727cc3d15b5d8048631f *R/ipsatize.R
 aeaa55f159c0586b307ea08672aac61b *R/item.ICC.R
 f3ebf0f0cfb55238998dcf8d67a909a7 *R/item.resid.R
+5073791c277c3404d3e7b3f3b97949e3 *R/lensDetect.r
+bacaf2e525bf4f4511dd0593f09de9b4 *R/lensModel.r
 de9bda47bc2e78d043f2976fdcd250ca *R/lin.coef.R
 85fab51d2c0d2b7fb1f4e5d4cde08b5d *R/meanif.R
 131be2d78174aa0ce331949e28840a39 *R/n4rci.R
 94628b8d7599fae300b867495e8f0e0a *R/partwhole.R
+3f5e00278afac1dada7fb52efea12654 *R/plotProfile.R
 b3ac1e8df6521cdf01a0c87961a7e0cb *R/popsd.R
+070aada3503e79dc6e1d45c01fcfb9cb *R/print.lensMod.r
 e3d0a2e30f10b8ca1e5e282e8fed1848 *R/print.q.cor.r
 8ae43bbdefdc60fae982d66898a64655 *R/profile.ICC.R
 48c1e1bfae3578a038d569d1d46bea51 *R/profile.norm.R
@@ -40,6 +44,7 @@ d009696437a4dd43fcdc2a0344f8530f *R/q.cor.print.R
 8db6b27787f21889cb9ae731b2be0d1e *R/rand.test.R
 5c057b47be28cc954eb5ba0fbf49d06b *R/reQ.R
 593e7406f96ef4b3f385946aeed81f76 *R/scale2.R
+9bfdba3aa0aec15368a2e8f7618084a4 *R/scoreTest.R
 6b3c00a9a8e670419d03e57d5fa73c49 *R/sig.r.R
 2cb4e0c1c7258bb4937eabd6858c7fca *R/splithalf.r.R
 d224be3f80a5aedbf38ec49d40ad5369 *R/structSumIPC.r
@@ -59,6 +64,7 @@ d10ef24ba01bb9659935178b97f06a99 *data/bfi.set.rdata
 80368e233d6ac57a30af9c4b254c3364 *data/caq.rdata
 e5a1e55d70f871dee45cffd59bfb3fd0 *data/exsitu.RData
 2b501e8b0561eedd0a9afc552e64df7f *data/insitu.RData
+5e074a85aee07c7d112908e652fa871c *data/lensData.rdata
 de7fbf52e9e8e8d5027969b2d4f117d2 *data/opt.temp.rdata
 ee13f43a2ced2465449081d053434b40 *data/rate.caq.rdata
 74013ad5eec0ce8a59eafc07231e2f08 *data/rbqv3.items.rdata
@@ -92,7 +98,7 @@ c1991bdb593e0873765ec35e4d30e0b0 *man/cor.comb.Rd
 b88a806105056c39275f55df0a5bedb9 *man/cor.comb.rep.Rd
 9699ab4f097a2ce31a6d8ab6edc60b10 *man/decomp.Rd
 76e715b2a19babbf5581ba88eb1a4016 *man/describe.r.Rd
-e546e21521890a99b513c636757f01e7 *man/diffPlot.Rd
+52f67c5567309e740197f2c7c0416284 *man/diffPlot.Rd
 810a3b499e9dd8d9baefa5fc0371966c *man/e.bars.Rd
 5ba524d3263c9631b93d7be173ca913c *man/egraph.Rd
 ff93d7894f3150adbfa9c30e506284cc *man/exsitu.Rd
@@ -103,14 +109,19 @@ f507aeaa52ea0b09714da7b9ed695a14 *man/insitu.Rd
 3bfdadb82547553bee843fe781b901fd *man/ipsatize.Rd
 f954fb787506e7e2108a9fb977206416 *man/item.ICC.Rd
 727ae3cbede911a2251959bb2fcc33d2 *man/item.resid.Rd
+8ca69d3b3e872932d3f125f3e84eff7a *man/lensData.rd
+542fa343899381b6d46e72999559b560 *man/lensDetect.rd
+18a92489f375d34cc576c75d568a97b3 *man/lensModel.rd
 63778a4d95977243eb5da2cc804c63f2 *man/lin.coef.Rd
 75575e8ab178f8b727312a4ed11e027d *man/meanif.Rd
 3ee82ca9e3a42047074a0b6cc5b697f6 *man/multicon-package.Rd
 a84ca0277efc0520a607b09401559718 *man/n4rci.Rd
 5d49ea719acc5461576e04558584cf77 *man/opt.temp.Rd
 6fb00f213a203ad79451ca52d392e540 *man/partwhole.Rd
+1fc32186178d9d0b2fa05270a4e182b8 *man/plotProfile.Rd
 bf142bad1a25d4466a8748a65c5a7589 *man/popsd.Rd
-52d525090742d969c1a197bf278f6888 *man/print.q.cor.rd
+e8fa4863b28b00ddf70e2520de531ed5 *man/print.lensMod.rd
+af6676eb2831a1888f46bab7e08cfc23 *man/print.q.cor.rd
 d0b28be4d8442825b6937f92bdffdacf *man/q.cor.Rd
 f235fbbc9b87cf5f16d1403748e98bba *man/q.cor.print.Rd
 78760921e2aef735c97836607d2cd80e *man/rand.test.Rd
@@ -118,6 +129,7 @@ f235fbbc9b87cf5f16d1403748e98bba *man/q.cor.print.Rd
 b21c64379c627864d828e159ddb69136 *man/rbqv3.items.Rd
 2eed062dae6def45f942d15d899a5204 *man/reQ.Rd
 eb31ded4784a321a060064e075e480be *man/scale2.Rd
+3f2a4ebf3f5eb6f84e891c419a1dc77a *man/scoreTest.Rd
 88afc720943b43fdb29adfa4534b9efa *man/sig.r.Rd
 136321f2e292ceb5e5355e0b268e6707 *man/splithalf.r.Rd
 514525535831b149a2a601af9a15bfc1 *man/structSumIPC.Rd
@@ -129,5 +141,5 @@ c9e3a8d0b5b130cdb549d3e093acdbf0 *man/v2rbq.Rd
 e29be2b2f46c40528ec6e0c3cf4bb5b8 *man/v4rbq.Rd
 82e59e2cff5c9d172181145ea13d568b *man/v5rbq.Rd
 51ab3fd8ff00ad7ec55401dbbf404ec8 *man/valid.pairs.Rd
-fe63491f1c2294b5f94a99d63b63dbf8 *man/vector.alpha.Rd
-18e6d38a1c361e80cfe913192b46f30a *man/vector.splithalf.Rd
+43072e6360059fc7f7f1d520b37782a6 *man/vector.alpha.Rd
+5dd3a47632266a1b797b075e025f4d12 *man/vector.splithalf.Rd

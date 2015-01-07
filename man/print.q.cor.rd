@@ -36,7 +36,7 @@ More arguments to pass to the print function.
 }
 }
 \details{
-A print function for the q.cor() function used to summarize the results of a q.cor object. This function easily adds the content of the items to the correlation table, sorts the correlation table, and allows the user to limit the table to only those items that are statistically significant at the p < .10 for the combined or .05 level for each gender by setting the short option = TRUE. In addition, the export option allows the user to output the results (either long or short) into a .csv file.
+A print function for the \code{\link{q.cor}} function used to summarize the results of a q.cor object. This function easily adds the content of the items to the correlation table, sorts the correlation table, and allows the user to limit the table to only those items that are statistically significant at the p < .10 for the combined or .05 level for each gender by setting the short option = TRUE. In addition, the export option allows the user to output the results (either long or short) into a .csv file.
 }
 
 \author{

@@ -32,7 +32,7 @@ A numeric indicating the minimum level of replicability to be returned.
 }
 }
 \details{
-Sherman and Wood (in press) suggest that one way to estimate the replicability of a vector of correlation coefficients between a variable of interest (x) and a set of other variables (set) is to 1) Z-score all variables, 2) multiply the Z-scored variable of interest by the Z-scores for each of the variables in set, 3) transpose the resultant matrix of cross-products and compute cronbach's alpha on this matrix. This function does just that and includes options for getting replicability coefficients for regression slopes and covariances.
+Sherman and Wood (2014) suggest that one way to estimate the replicability of a vector of correlation coefficients between a variable of interest (x) and a set of other variables (set) is to 1) Z-score all variables, 2) multiply the Z-scored variable of interest by the Z-scores for each of the variables in set, 3) transpose the resultant matrix of cross-products and compute cronbach's alpha on this matrix. This function does just that and includes options for getting replicability coefficients for regression slopes and covariances.
 }
 \value{
 \item{N }{The sample size}
@@ -43,7 +43,7 @@ Sherman and Wood (in press) suggest that one way to estimate the replicability o
 
 }
 \references{
-Sherman, R. A. & Wood, D. (in press). Estimating the expected replicability of a pattern of correlations and other measures of association. Multivariate Behavioral Research.
+Sherman, R. A. & Wood, D. (2014). Estimating the expected replicability of a pattern of correlations and other measures of association. Multivariate Behavioral Research. 49(1), 17-40.
 Koning, A. J. & Franses, P. H. (2003). Confidence Intervals for Cronbach's Alpha Coefficient values. ERIM Report Series Reference No. ERS-2003-041-MKT. Available at SSRN: http//ssrn.com/abstract=423658 
 }
 \author{
