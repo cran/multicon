@@ -13,8 +13,8 @@ This package contains functions for examining multivariate constructs (MCs).
 \tabular{ll}{
 Package: \tab multicon\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2013-11-07\cr
+Version: \tab 1.6\cr
+Date: \tab 2011-1-29\cr
 License: \tab GPL-2\cr
 }
 MCs are, as the name implies, constructs that consist of many variables. 

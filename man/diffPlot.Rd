@@ -17,7 +17,7 @@ diffPlot(x, ...)
   grp.names=NULL, var.equal=FALSE, paired=FALSE, ylim=NULL, ...)
   
 ## Method for class 'formula' 
-\method{diffPlot}{formula}(formula,data, plotFUN=mean, errFUN=c("ci", "se", "sd"), conf=.95, 
+\method{diffPlot}{formula}(formula, data = NULL, plotFUN=mean, errFUN=c("ci", "se", "sd"), conf=.95, 
   grp.names=NULL, var.equal=FALSE, paired=FALSE, ylim=NULL, ...)
 }
 %- maybe also 'usage' for other objects documented here.
@@ -32,7 +32,7 @@ Numeric vector of data values to be plotted
 A formula of the form lhs ~ rhs where lhs is a numeric vector containing the data values and rhs is a variable with exactly two levels giving the corresponding groups.
 }
 \item{data}{
-A data frame containing the variables in the formula.
+An optional data frame containing the variables in the formula.
 }
   \item{plotFUN}{
 The function used to create the summary statistic. Usually mean is desired.
@@ -84,8 +84,7 @@ g <- rep(1:2, each=50)
 diffPlot(g, y, ylab="DV", xlab="", main="Plot of Means with Floating Axis for Mean Difference", 
 grp.names=c("Control", "Experimental"), sub="Arms Indicate 95 Percent CIs")
   # Independent Groups, formula method
-  df=data.frame(y=y,g=g)
-diffPlot(y ~ g, data=df, ylab="DV", xlab="", 
+diffPlot(y ~ g, ylab="DV", xlab="", 
 main="Plot of Means with Floating Axis for Mean Difference", 
 grp.names=c("Control", "Experimental"), sub="Arms Indicate 95 Percent CIs")
   # Dependent Groups

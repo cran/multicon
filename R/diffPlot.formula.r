@@ -1,5 +1,5 @@
 diffPlot.formula <-
-function (formula, data, plotFUN = mean, errFUN = c("ci", "se",
+function (formula, data = NULL, plotFUN = mean, errFUN = c("ci", "se",
     "sd"), conf = 0.95, grp.names = NULL, var.equal = FALSE,
     paired = FALSE, ylim=NULL, ...)
 {

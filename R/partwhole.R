@@ -1,7 +1,6 @@
 partwhole <-
 function(x, nitems=1, nomiss=.8) {
   
-
   Utarg <- composite(data.frame(x), nomiss=nomiss)
   Ftarg <- principal(x, scores=T)$scores
   
@@ -17,6 +16,6 @@ function(x, nitems=1, nomiss=.8) {
   Fmatch <- cor(Ftarg, comps, use="pair")
   out <- rbind(Umatch, Fmatch)
   colnames(out) <- combnames
-  rownames(out) <- c("Umatch", "Fmatch")
+  rownames(out) <- c("UnitWgt", "Component")
   return(out)
 }

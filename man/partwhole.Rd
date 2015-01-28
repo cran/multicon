@@ -28,8 +28,8 @@ The purpose of this function is to determine which subset of items, when formed 
 \value{
 A matrix with 2 rows and K columns where K is the number of possible subset combinations.
 The column names indicate which items (separated by an underline) make up the subset
-combination. The first row (Umatch) is the result using a unit weighted composite for the
-total set of items and the second row (Fmatch) is the result using principle component scores
+combination. The first row (UnitWgt) is the result using a unit weighted composite for the
+total set of items and the second row (Component) is the result using principle component scores
 for the total set of items. 
 }
 
